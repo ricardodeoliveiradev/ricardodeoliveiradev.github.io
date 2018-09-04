@@ -1,0 +1,118 @@
+body {
+    font-size:2vw ;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: black;
+}
+.svg-header {
+    font-size:9vw;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+svg {
+    font-weight: 100;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0; top: 0;
+} 
+
+svg mask rect {
+    fill: rgba(255, 255,255,0.9);
+}
+
+svg > rect {
+    fill: rgba(0,0,0,0.8);
+    -webkit-mask: url (#mask);
+    mask: url(#mask); 
+} 
+
+.container {
+    background: rgba(255, 255,255);
+    padding: 10px 30px 60px;
+    padding-top: 60px;
+    border-top: 3px solid black; 
+}
+
+.img-cv img {
+    border-radius: 150em;
+    border: 3px solid black;
+    display:flex;
+    margin: 0 auto;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0; top: 0;
+    overflow: hidden;
+    z-index: -1;                               
+}
+
+.no-svg-header {
+    display: none;
+}    
+
+.rodape {
+    background-color: rgba(255, 255,255);
+    padding: 20px;
+}
+
+.rodape h1 {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.rodape p a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-size: 1.2vw;
+}
+
+.rodape p a:hover {
+    font-weight: bold;
+}
+
+.imagem  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.imagem img {
+    object-fit: contain;
+    width: 4vw;
+    height: 4vh;
+}
+
+.links-de-contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
